@@ -4,21 +4,28 @@ A terminal-based music player for Unix.
 
 **Note: This project is dead.**
 
-### Commands
-#### Quick controls
+![Image](IMAGE.jpg)
+
+## Commands
+
+### Quick controls
+
 Pressing these keys at any time will immediately trigger the functionality.
 (To be expanded)
-```
+
+```txt
 p | spacebar                                  play/pause the current track
 s                                             stop playback of the current track
 b                                             select the previous song in playlist
 n                                             select the next song in the playlist
 ```
 
-#### Command line
+### Command line
+
 In order to activate the command line, ":" must be provided as input. A command input field will appear, and the following commands are supported.
 (To be expanded)
-```
+
+```txt
 GENERAL
    q  | quit                                   safely exits the application
    h  | help                                   displays information to navigate to the mode:help view
@@ -39,21 +46,25 @@ PLAYLIST
    s | stop                                    stops playback of the currently playing track
 ```
 
-### Dependencies
+## Dependencies
+
 * **curses** for rendering terminal UI
 * **pyglet** for audio support
 * **AVbin** (pyglet depency)
 
-### Known Issues
+## Known Issues
+
 * AVbin throws an exception after playing multiple files
 * Some files cannot be played (float exception)
 * Playlists that exceed the length of the terminal window's height will crash the application
 
-### To Do (Project Management)
-* Organize profect directory into a more "pythonic" structure
+## To Do (Project Management)
+
+* Organize project directory into a more "pythonic" structure
 * Include requirements file
 
-### To Do (Development)
+## To Do (Development)
+
 * UI does not refresh continuously (seek bar / timestamp do not update continuously)
 * Playlist scrolling
 * Track queueing (currently only a single track will play)
